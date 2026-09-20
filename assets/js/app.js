@@ -31,6 +31,13 @@
     return (ctx || document).querySelector(sel);
   }
 
+  /* 图片地址统一用相对路径：后台写出的以 / 开头的路径在这里去掉前导斜杠，
+     保证网站在二级目录（GitHub Pages 项目地址）下也能正常显示。 */
+  function asset(path) {
+    if (!path) return "";
+    return String(path).replace(/^\/+/, "");
+  }
+
   function $$(sel, ctx) {
     return Array.prototype.slice.call((ctx || document).querySelectorAll(sel));
   }
@@ -200,7 +207,7 @@
     return (
       '<article class="card reveal">' +
       '<div class="card__media"><img src="' +
-      esc(cover.src || "") +
+      esc(asset(cover.src)) +
       '" alt="' +
       esc(product.name) +
       '" loading="lazy">' +
@@ -286,7 +293,7 @@
         "</a>" +
         "</div></div>" +
         '<div class="hero__media"><figure><img src="' +
-        esc(hero.image || "") +
+        esc(asset(hero.image)) +
         '" alt="' +
         esc(hero.imageCaption || "") +
         '" fetchpriority="high"><figcaption>' +
@@ -389,7 +396,7 @@
           .join("") +
         "</div></div>" +
         '<figure class="reveal"><img src="' +
-        esc(about.introImage || "") +
+        esc(asset(about.introImage)) +
         '" alt="' +
         esc(about.title || "") +
         '" loading="lazy"></figure>'
@@ -481,7 +488,7 @@
         "</div></div>" +
         (team.image
           ? '<figure class="reveal" style="margin:0"><img src="' +
-            esc(team.image) +
+            esc(asset(team.image)) +
             '" alt="团队" loading="lazy" style="width:100%;border-radius:var(--r-lg);aspect-ratio:4/3;object-fit:cover;box-shadow:var(--shadow-2)"></figure>'
           : "")
     );
@@ -570,7 +577,7 @@
                 '"><img class="' +
                 (isLogo(img.src) ? "is-contain" : "") +
                 '" src="' +
-                esc(img.src) +
+                esc(asset(img.src)) +
                 '" alt="' +
                 esc(product.name) +
                 " 图 " +
@@ -604,7 +611,7 @@
       '<div class="gallery__main' +
       (isLogo((images[0] || {}).src) ? " is-contain" : "") +
       '"><img src="' +
-      esc((images[0] || {}).src || "") +
+      esc(asset((images[0] || {}).src)) +
       '" alt="' +
       esc(product.name) +
       '" loading="lazy"></div>' +
@@ -718,7 +725,7 @@
           .map(function (item) {
             return (
               '<div><img src="' +
-              esc(item.logo) +
+              esc(asset(item.logo)) +
               '" alt="' +
               esc(item.name) +
               '" loading="lazy"></div>'
@@ -857,11 +864,11 @@
               .map(function (item) {
                 return (
                   '<button class="honor-card" type="button" data-lightbox="' +
-                  esc(item.image) +
+                  esc(asset(item.image)) +
                   '" data-caption="' +
                   esc(item.title + (item.caption ? "　" + item.caption : "")) +
                   '"><span class="honor-card__media"><img src="' +
-                  esc(item.image) +
+                  esc(asset(item.image)) +
                   '" alt="' +
                   esc(item.title) +
                   '" loading="lazy"></span><span class="honor-card__body"><span class="honor-card__title">' +
