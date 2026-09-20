@@ -1,0 +1,10 @@
+# 交付说明与内部对照表，只在本地保留，不发布到网站
+/delivery/
+
+# 系统与临时文件
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+*.log
+~$*

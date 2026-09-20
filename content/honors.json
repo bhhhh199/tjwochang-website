@@ -1,0 +1,69 @@
+{
+  "title": "资质荣誉",
+  "lead": "合作品牌的授权文件、行业奖项与国家专利证书原件。点击任意一张可放大查看。",
+  "reviewNote": "以下图片均来自公司自有资料，已逐张检查：未发现价格条款、个人身份信息或客户保密条款。专利证书上的发明人姓名属于国家知识产权局公开信息。",
+  "groups": [
+    {
+      "title": "荣誉奖项",
+      "desc": "2012–2015 年度 ABB 最佳表现奖。",
+      "items": [
+        {
+          "title": "ABB 最佳表现奖",
+          "caption": "ABB 最佳表现奖奖牌",
+          "image": "assets/img/honors/abb-best-performance-2012.jpg"
+        },
+        {
+          "title": "ABB 最佳表现奖奖杯",
+          "caption": "ABB 最佳表现奖奖杯",
+          "image": "assets/img/honors/abb-trophy.jpg"
+        },
+        {
+          "title": "ABB 2012 年度最佳表现奖证书",
+          "caption": "ABB Engineering (Shanghai) Ltd. 颁发",
+          "image": "assets/img/honors/abb-certificate.png"
+        }
+      ]
+    },
+    {
+      "title": "品牌授权",
+      "desc": "国际品牌在中国的经销与代理授权文件。",
+      "items": [
+        {
+          "title": "SMI 中国乳品行业独家经销商",
+          "caption": "艾斯米机械（北京）有限公司授权，中国乳品行业独家经销商",
+          "image": "assets/img/honors/authorization-smi.jpg"
+        },
+        {
+          "title": "梅特勒-托利多特约经销商",
+          "caption": "梅特勒-托利多国际贸易（上海）有限公司授权特约经销商",
+          "image": "assets/img/honors/authorization-mettler.jpg"
+        },
+        {
+          "title": "ABB 授权书",
+          "caption": "授权代理销售 ABB 产品",
+          "image": "assets/img/honors/authorization-abb.png"
+        },
+        {
+          "title": "赛默飞世尔 Thermo 授权书",
+          "caption": "授权代理销售 Thermo 产品",
+          "image": "assets/img/honors/authorization-thermo.png"
+        }
+      ]
+    },
+    {
+      "title": "国家专利证书",
+      "desc": "公司自主研发设备的国家专利证书原件照片。",
+      "items": [
+        { "title": "实用新型专利证书 01", "caption": "", "image": "assets/img/honors/patent-01.png" },
+        { "title": "实用新型专利证书 02", "caption": "", "image": "assets/img/honors/patent-02.png" },
+        { "title": "专利证书 03", "caption": "", "image": "assets/img/honors/patent-03.jpg" },
+        { "title": "专利证书 04", "caption": "", "image": "assets/img/honors/patent-04.jpg" },
+        { "title": "实用新型专利证书 05", "caption": "", "image": "assets/img/honors/patent-05.jpg" },
+        { "title": "实用新型专利证书 06", "caption": "", "image": "assets/img/honors/patent-06.jpg" },
+        { "title": "实用新型专利证书 07", "caption": "", "image": "assets/img/honors/patent-07.jpg" },
+        { "title": "实用新型专利证书 08", "caption": "", "image": "assets/img/honors/patent-08.jpg" },
+        { "title": "实用新型专利证书 09", "caption": "", "image": "assets/img/honors/patent-09.png" }
+      ]
+    }
+  ]
+}
